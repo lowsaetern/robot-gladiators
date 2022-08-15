@@ -3,13 +3,26 @@ var playerHealth = 100;
 var playerAttack = 10;
 var playerMoney = 10;
 
+var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
+var enemyHealth = 50;
+var enemyAttack = 12;
+
 
 // You can also log multiple values at once like this
 console.log(playerName, playerAttack, playerHealth);
+console.log(enemyNames)
+console.log(enemyNames.length);
+for(var i = 0; i < enemyNames.length; i++) {
+    console.log(enemyNames[i]);
+    console.log(i);
+    console.log(enemyNames[i] + " is at " + i + " index");
+  }
 
-var enemyName = "Roborto";
 var enemyHealth = 50;
 var enemyAttack = 12;
+
+
+
 
 var fight = function() {
     // Alert players that they are starting the round
@@ -46,6 +59,10 @@ if (playerHealth <= 0) {
   
 
 fight();
+var fight = function(enemyName) {
+
+  }
+
 var promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose.");
 
 // if player choses to fight, then fight
