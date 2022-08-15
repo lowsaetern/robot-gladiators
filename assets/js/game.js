@@ -139,6 +139,7 @@ var randomNumber = function(min, max) {
     var shopOptionPrompt = window.prompt(
       'Would you like to REFILL your health, UPGRADE your attack, or LEAVE the store? Please enter one "REFILL", "UPGRADE", or "LEAVE" to make a choice.'
     );
+    
   
     // use switch case to carry out action
     switch (shopOptionPrompt) {
