@@ -164,7 +164,8 @@ var randomNumber = function(min, max) {
     endGame();
   };
   
-  // function to end the entire game
+
+
   var endGame = function() {
     window.alert("The game has now ended. Let's see how you did!");
   
@@ -173,7 +174,6 @@ var randomNumber = function(min, max) {
     if (highScore === null) {
       highScore = 0;
     }
-  
     // if player has more money than the high score, player has new high score!
     if (playerInfo.money > highScore) {
       localStorage.setItem("highscore", playerInfo.money);
