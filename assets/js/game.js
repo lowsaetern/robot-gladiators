@@ -189,7 +189,6 @@ var getPlayerName = function() {
 
   // player information
   var playerInfo = {
-    name: getPlayerName(),
     name: window.prompt("What is your robot's name?"),
     health: 100,
     attack: 10,
@@ -198,6 +197,7 @@ var getPlayerName = function() {
       this.health = 100;
       this.money = 10;
       this.attack = 10;
+      name: getPlayerName(),
     },
     refillHealth: function() {
       if (this.money >= 7) {
